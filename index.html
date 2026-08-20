@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,8 +8,10 @@
   <meta name="description"
     content="Traffic Tour is a driving game where you drive on a highway and speed into traffic.Navigate your way on a straight highway between cars and trucks.">
   <link rel="stylesheet" href="./css/font-awesome.pro.css">
-  <link rel="stylesheet" href="./css/gamedistribution.css">
+  <link rel="stylesheet" href="./css/gametraffictour.css">
   <link rel="icon" href="./images/traffictour.avif" type="image/avif">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3964980751221225"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -47,7 +49,6 @@
           <div class="gd-game-cover-card" id="gd-cover-card">
             <img src="/images/traffictour.avif" alt="traffictour Logo" class="gd-game-icon-lg">
             <h1 class="gd-game-title-lg">traffictour</h1>
-            <p class="gd-game-publisher-sub">by GameBerry Studio</p>
             <button class="gd-btn-play-now" onclick="playGame()">
               <i class="fas fa-play"></i> Play Now
             </button>
@@ -58,18 +59,13 @@
             <iframe id="game-area" src="https://traffictour.github.io/traffic-tour/" title="traffictour Game"
               allowfullscreen scrolling="no"></iframe>
           </div>
-
-          <!-- FULLSCREEN BUTTON AT BOTTOM RIGHT -->
-          <button class="gd-btn-stage-fullscreen" onclick="openFullscreen()" title="Fullscreen">
-            <i class="fas fa-expand"></i> Fullscreen
-          </button>
         </div>
 
         <!-- ACTION BAR -->
         <div class="gd-card gd-action-bar">
           <div class="gd-action-left">
-            <button class="gd-btn-outline" onclick="openInNewTab()">
-              <i class="fas fa-external-link-alt"></i> Open in a new tab
+            <button class="gd-btn-outline gd-btn-fullscreen" onclick="openFullscreen()" title="Fullscreen">
+              <i class="fas fa-expand"></i> Fullscreen
             </button>
           </div>
           <div class="gd-action-right">
@@ -96,31 +92,25 @@
               <span class="gd-similar-title">Boat Drift</span>
             </a>
 
-            <a href="./game/highway-racer-3d.html" class="gd-similar-card">
+            <a href="./game/2-player-dark-racing.html" class="gd-similar-card">
               <div class="gd-similar-thumb-wrap">
-                <img src="https://ubg77.github.io/edit/highway-racer-3d/logo.png" alt="Mountain Bus Driver"
-                  class="gd-similar-thumb">
+                <img src="./images/2-player-dark-racing.jpg" alt="2 player dark racing" class="gd-similar-thumb">
               </div>
-              <span class="gd-similar-title">Mountain Bus Driver</span>
-              <span class="gd-similar-pub">Instant Games Studio</span>
+              <span class="gd-similar-title">2 player dark racing</span>
             </a>
 
-            <a href="./game/traffic-mania.html" class="gd-similar-card">
+            <a href="./game/atv-ultimate-offroad.html" class="gd-similar-card">
               <div class="gd-similar-thumb-wrap">
-                <img src="https://webglmath.github.io/traffic-mania/logo.png" alt="Bus Escape: Clear Jam"
-                  class="gd-similar-thumb">
+                <img src="./images/atv-ultimate-offroad.jpeg" alt="atv ultimate offroad" class="gd-similar-thumb">
               </div>
-              <span class="gd-similar-title">Bus Escape: Clear Jam</span>
-              <span class="gd-similar-pub">Mirra Games</span>
+              <span class="gd-similar-title">atv ultimate offroad</span>
             </a>
 
-            <a href="./game/crazy-cars.html" class="gd-similar-card">
+            <a href="./game/car-speed-racing-tycoon.html" class="gd-similar-card">
               <div class="gd-similar-thumb-wrap">
-                <img src="https://classroomjq.github.io/crazy-cars/logo.png" alt="Animal Bus Traffic Jam"
-                  class="gd-similar-thumb">
+                <img src="./images/car-speed-racing-tycoon.png" alt="car speed racing tycoon" class="gd-similar-thumb">
               </div>
-              <span class="gd-similar-title">Animal Bus Traffic Jam</span>
-              <span class="gd-similar-pub">PuzzleGame.Com</span>
+              <span class="gd-similar-title">car speed racing tycoon</span>
             </a>
 
             <a href="./game/burnin-rubber-5-xs.html" class="gd-similar-card">
@@ -129,7 +119,6 @@
                   class="gd-similar-thumb">
               </div>
               <span class="gd-similar-title">Emergency Jam</span>
-              <span class="gd-similar-pub">Inlogic Software</span>
             </a>
 
             <a href="./game/drift-boss.html" class="gd-similar-card">
@@ -138,7 +127,6 @@
                   class="gd-similar-thumb">
               </div>
               <span class="gd-similar-title">Bus Jam Escape</span>
-              <span class="gd-similar-pub">GameBerry Studio</span>
             </a>
 
           </div>
@@ -151,72 +139,76 @@
     <!-- FULL WIDTH EXPANDED CARDS SECTION -->
     <div class="gd-full-width-section" style="margin-top: 24px; display: flex; flex-direction: column; gap: 20px;">
 
-      <!-- GAME INFO & METADATA GRID -->
+      <!-- DETAILED GAME DESCRIPTION -->
       <div class="gd-card">
-        <div class="gd-info-grid">
-          <div class="gd-info-row">
-            <span class="gd-info-label">Game Title:</span>
-            <span class="gd-info-value" style="font-weight:600; color:#1f2937;">Park Fever</span>
-          </div>
-          <div class="gd-info-row">
-            <span class="gd-info-label">Mobile Web Compatible:</span>
-            <span class="gd-info-value">iOS - Android</span>
-          </div>
-          <div class="gd-info-row">
-            <span class="gd-info-label">Published by:</span>
-            <a href="#" class="gd-info-link">GameBerry Studio</a>
-          </div>
-          <div class="gd-info-row" style="grid-column: 1 / -1; margin-top: 6px;">
-            <span class="gd-info-label" style="min-width:70px;">Language:</span>
-            <span class="gd-tag-pill">English</span>
-          </div>
-          <div class="gd-info-row" style="grid-column: 1 / -1; margin-top: 4px;">
-            <span class="gd-info-label" style="min-width:70px;">Gender:</span>
-            <span class="gd-tag-pill">Male</span>
-            <span class="gd-tag-pill">Female</span>
-            <span class="gd-info-label" style="margin-left: 24px; min-width:80px;">Age Group:</span>
-            <span class="gd-tag-pill gd-tag-purple">Teens</span>
-            <span class="gd-tag-pill gd-tag-purple">YoungAdults</span>
-            <span class="gd-tag-pill gd-tag-purple">Adults</span>
-          </div>
+        <h2 class="gd-section-title"><i class="fas fa-flag-checkered" style="color:var(--gd-primary);"></i> ABOUT
+          TRAFFIC TOUR - ULTIMATE HIGHWAY RACING</h2>
+        <div class="gd-text-content" style="display: flex; flex-direction: column; gap: 14px;">
+          <p>
+            <strong>Traffic Tour</strong> is a brand new endless arcade racing game that takes you to another level of
+            smooth driving simulations and high-quality graphic quality. Designed for traffic racing fans with advanced
+            features, Traffic Tour offers an exhilarating highway driving experience through real-time traffic,
+            featuring over 40 customizable cars, realistic vehicle cockpits, dynamic weather, and 5 distinct game modes!
+          </p>
+          <p>
+            In Traffic Tour, your objective is to speed down infinite highway lanes, maneuver through dense traffic of
+            cars and trucks, collect rewards, and upgrade your vehicle arsenal. Whether you want to relax in Free Run
+            mode or compete fiercely against global rivals in real-time multiplayer, Traffic Tour provides unmatched
+            velocity and excitement directly in your web browser.
+          </p>
+
+          <h3 style="font-family:var(--font-heading); font-size:16px; font-weight:800; color:#1f2937; margin-top:8px;">
+            <i class="fas fa-star" style="color:#f59e0b;"></i> Key Game Features
+          </h3>
+          <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 6px;">
+            <li><strong>40+ Unique Cars:</strong> Unlock sports cars, muscle cars, hypercars, and SUVs with realistic
+              engine sounds and customizable paints & rims.</li>
+            <li><strong>5 Thrilling Game Modes:</strong> Multiplayer mode (real-time PvP), Career mode (100+ missions),
+              Time Trial, Endless Highway, and Free Run.</li>
+            <li><strong>5 Stunning Environments:</strong> Highway, City, Desert, Rain, and Snow with dynamic Day & Night
+              cycles.</li>
+            <li><strong>1st Person Cockpit View:</strong> Immersive first-person camera view with functional dashboard
+              meters and realistic steering animation.</li>
+            <li><strong>No Fuel or Time Limits:</strong> Pure endless driving with instant restarts and smooth 60 FPS
+              performance.</li>
+          </ul>
         </div>
       </div>
 
-      <!-- DESCRIPTION -->
+      <!-- INSTRUCTIONS & PRO TIPS -->
       <div class="gd-card">
-        <h2 class="gd-section-title">DESCRIPTION</h2>
-        <p class="gd-text-content">
-          Can you clear the traffic jam? Move vehicles in the right order, free the buses, and pick up waiting
-          passengers. Match colors, plan every move, and enjoy a fun puzzle that combines parking strategy with
-          passenger management!
-        </p>
-      </div>
+        <h2 class="gd-section-title"><i class="fas fa-gamepad" style="color:#10b981;"></i> HOW TO PLAY & CONTROLS GUIDE
+        </h2>
+        <div class="gd-text-content" style="display: flex; flex-direction: column; gap: 14px;">
+          <p>
+            Mastering Traffic Tour requires sharp reflexes and strategic lane switching. Follow the controls and expert
+            driving tips below to maximize your high score and earn maximum cash rewards:
+          </p>
 
-      <!-- INSTRUCTIONS -->
-      <div class="gd-card">
-        <h2 class="gd-section-title">INSTRUCTIONS</h2>
-        <p class="gd-text-content">
-          Tap a vehicle to drive it out of the traffic jam. Vehicles can only leave if the path in the direction of
-          their arrow is completely clear. Move them to the boarding area and pick up passengers in the queue. Match
-          each vehicle with the correct passengers color and clear the entire parking lot to complete the level.
-        </p>
-      </div>
+          <h3 style="font-family:var(--font-heading); font-size:16px; font-weight:800; color:#1f2937; margin-top:4px;">
+            <i class="fas fa-keyboard" style="color:#3b82f6;"></i> Controls & Keybindings
+          </h3>
+          <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 6px;">
+            <li><strong>Steer Left / Right:</strong> Use <code>W, A, S, D</code> or <code>Arrow Keys</code>.</li>
+            <li><strong>Accelerate:</strong> Press <code>Up Arrow</code> or <code>W</code> key.</li>
+            <li><strong>Brake / Reverse:</strong> Press <code>Down Arrow</code> or <code>S</code> key.</li>
+            <li><strong>Nitrous Boost:</strong> Press <code>Shift</code> or <code>Spacebar</code> for extra speed boost.
+            </li>
+            <li><strong>Change Camera View:</strong> Press <code>C</code> key to switch between 1st Person interior and
+              3rd Person camera angles.</li>
+          </ul>
 
-      <!-- IMPORTANT NOTIFICATION BOX -->
-      <div class="gd-card">
-        <div class="gd-notification-box">
-          <div>
-            <h2 class="gd-notification-title">IMPORTANT NOTIFICATION ABOUT EMBEDDING GAMES</h2>
-            <p class="gd-text-content" style="font-size: 13px;">
-              Ads should be requested from the game's page url to avoid loss of ads performance. To make this happen
-              please adjust your game frame request url as follows: <strong>gd_sdk_referrer_url</strong> should be
-              added to the request url. To do that modify your request url as:<br>
-            </p>
-          </div>
-          <div class="gd-notification-controls">
-            <span class="gd-notification-arrow"><i class="fas fa-chevron-up"></i></span>
-            <span class="gd-notification-arrow"><i class="fas fa-chevron-down"></i></span>
-          </div>
+          <h3 style="font-family:var(--font-heading); font-size:16px; font-weight:800; color:#1f2937; margin-top:8px;">
+            <i class="fas fa-lightbulb" style="color:#10b981;"></i> Pro Driving Tips for Maximum Score
+          </h3>
+          <ul style="padding-left: 20px; display: flex; flex-direction: column; gap: 6px;">
+            <li><strong>Overtake Closely:</strong> Passing vehicles closely at speeds over 100 km/h triggers close-call
+              bonuses and multiplier combos.</li>
+            <li><strong>Drive in Opposite Lane:</strong> Driving against traffic flow in Two-Way mode doubles your score
+              accumulation rate!</li>
+            <li><strong>Upgrade Nitro & Engine:</strong> Prioritize top speed and nitro acceleration upgrades to conquer
+              harder Career missions.</li>
+          </ul>
         </div>
       </div>
 
@@ -225,6 +217,29 @@
 
   <!-- JAVASCRIPT -->
   <script src="./js/gamedistribution.js"></script>
+  <!-- FOOTER SECTION WITH DOMAIN NAME -->
+  <footer class="gd-footer">
+    <div class="gd-footer-container">
+      <div class="gd-footer-brand">
+        <a href="./index.html" class="gd-logo">
+          <img src="./images/traffictour.avif" alt="Traffic Tour" class="gd-logo-img">
+          <span class="gd-logo-text-rgb">Traffic Tour</span>
+        </a>
+        <p class="gd-footer-desc">
+          Play the best free online racing, drifting, and driving games directly in your browser with zero downloads.
+        </p>
+      </div>
+
+      <div class="gd-footer-bottom">
+        <div class="gd-domain-badge">
+          <i class="fas fa-globe" style="color:var(--gd-primary);"></i>
+          <span class="gd-domain-name">traffictour.github.io</span>
+        </div>
+        <p class="gd-copyright">&copy; 2026 Traffic Tour. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
 
 </body>
 

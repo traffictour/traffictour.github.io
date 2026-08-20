@@ -1,171 +1,152 @@
-<!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <title>Traffic Jam 3d</title>
-    <meta name="title" content="TTraffic Jam 3d" />
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../css/jquery.mCustomScrollbar.min.css" />
-    <link type="text/css" rel="stylesheet" href="../js/OwlCarousel/assets/owl.carousel.min.css" />
-    <link type="text/css" rel="stylesheet" href="../js/OwlCarousel/assets/owl.theme.default.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/all.css?v=1.4.3" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3964980751221225"
-     crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="master">
-      <div class="sidebar">
-        <div class="side-header clearfix">
-          <div class="burger for-mobile">
-            <i class="fal fa-bars"></i>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Jam 3d - Play Online on Traffic Tour</title>
+  <meta name="description"
+    content="Play Traffic Jam 3d online for free. Enjoy high speed racing, drift challenges, and driving action on Traffic Tour Portal.">
+  <link rel="stylesheet" href="../css/font-awesome.pro.css">
+  <link rel="stylesheet" href="../css/gametraffictour.css">
+  <link rel="icon" href="../images/traffictour.avif" type="image/avif">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3964980751221225"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="gd-navbar">
+    <div class="gd-nav-container">
+      <div class="gd-nav-left">
+        <a href="../index.html" class="gd-logo">
+          <img src="../images/traffictour.avif" alt="Traffic Tour" class="gd-logo-img">
+          <span class="gd-logo-text-rgb">Traffic Tour</span>
+        </a>
+        <ul class="gd-nav-links">
+          <li><a href="../index.html" class="gd-nav-link">Home</a></li>
+          <li><a href="../catelogy/newgame.html" class="gd-nav-link">New Games</a></li>
+          <li><a href="../catelogy/hotgame.html" class="gd-nav-link">Hot Games</a></li>
+          <li><a href="../catelogy/cargame.html" class="gd-nav-link">Car Games</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="gd-main-wrapper">
+    <div class="gd-grid-layout">
+
+      <!-- LEFT COLUMN -->
+      <div class="gd-left-column">
+
+        <!-- HERO GAME STAGE -->
+        <div class="gd-game-stage">
+          <div class="gd-stage-bg-pattern"></div>
+
+          <!-- COVER CARD OVERLAY -->
+          <div class="gd-game-cover-card" id="gd-cover-card">
+            <img src="https://trafficjam3d.github.io/traffic-jam-3d/logo.png" alt="Traffic Jam 3d Logo" class="gd-game-icon-lg">
+            <h1 class="gd-game-title-lg">Traffic Jam 3d</h1>
+            <button class="gd-btn-play-now" onclick="playGame()">
+              <i class="fas fa-play"></i> Play Now
+            </button>
           </div>
-          <a class="logo" href="../index.html">
-            <img src="../images/traffictour.avif" alt="logo">
-          </a>
-          <div class="bt-more for-mobile">
-            <i class="far fa-stream"></i>
+
+          <!-- IFRAME CONTAINER -->
+          <div class="gd-iframe-container" id="gd-iframe-container">
+            <iframe id="game-area" src="https://trafficjam3d.github.io/traffic-jam-3d/" title="Traffic Jam 3d Game"
+              allowfullscreen scrolling="no"></iframe>
           </div>
         </div>
-        <ul class="side-menu mCustomScrollbar" data-mcs-theme="dark">
-            <li class="category-item">
-                <a href="../index.html">Home</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/traffic-tour.html">Traffic Tour</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/traffic-mania.html">Traffic Mania</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/boat-drift.html">Boat Drift</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/burnin-rubber-5-xs.html">Burnin Rubber 5 Xs</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/burnout-drift-hilltop.html">Burnout Drift Hilltop</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/car-drift-racers-2.html">Car Drift Racers 2</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/car-rush.html">Car Rush</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/crazy-cars.html">Crazy Car</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/cyber-cars-punk-racing.html">Cyber Cars Punk Racing</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/desert-car-racing-1.html">Desert Car Racing 1</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/drift-3.html">Drift 3</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/drift-boss.html">Drift Boss</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/drift-dudes.html">Drift Dudes</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/drift-f1.html">Drift F1</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/drift-hunters.html">Drift Hunters</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/eggy-car.html">Eggy Car</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/endless-truck.html">Endless Truck</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/fly-car-stunt.html">Fly Car Stunt</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/fly-car-stunt-2.html">Fly Car Stun 2</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/fly-car-stunt-3.html">Fly Car Stun 3</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/fly-car-stunt-4.html">Fly Car Stun 4</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/flying-cars-era.html">Flying Cars Era</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/flying-way-duo-race.html">Flying Way Duo Race</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/furious-racing-3d.html">Furious Racing 3d</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/fury-wars.html">Fury Wars</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/go-kart-go-ultra.html">Go Kart Go Ultra</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/highway-racer-3d.html">Highway Racer 3d</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/jelly-truck.html">Jelly Truck</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/kart-race-3d.html">Kart Race 3d</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/kart-wars.html">Kart Wars</a>
-              </li>             
-              <li class="category-item">
-                <a href="../game/sling-drift.html">Sling Drift</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/stock-car-hero.html">Stock Car Hero</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/super-star-car.html">Super Star Car</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/ultra-car.html">Ultra Car</a>
-              </li>
-              <li class="category-item">
-                <a href="../game/up-hill-racing-2.html">Up Hill Racing 2</a>
-              </li>
-        </ul>
-      </div>  
-      </div>
-      <div class="g-content">
-        <section class="mid-ct section-game">
-          <div class="container">
-            <div class="columns mobile-column">
-              <div class="column is-12-tablet is-9-desktop">
-                <div class="article game-container clearfix">
-                  <div class="game-iframe-container">
-                    <iframe class="game-iframe" loading="lazy" id="game-area" src="https://trafficjam3d.github.io/traffic-jam-3d/" width="100%" height="600" scrolling="none" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="article-header">
-                    <div class="text">
-                      <h1>Traffic Jam 3d</h1>
-                      <div class="bt-group"></div>
-                    </div>
-                    <div class="bt-group-2">                   
-                      <button onclick="open_fullscreen()">
-                        <i class="fal fa-expand-arrows"></i> Fullscreen </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+        <!-- ACTION BAR -->
+        <div class="gd-card gd-action-bar">
+          <div class="gd-action-left">
+            <button class="gd-btn-outline gd-btn-fullscreen" onclick="openFullscreen()" title="Fullscreen">
+              <i class="fas fa-expand"></i> Fullscreen
+            </button>
           </div>
-        </section>
-        <section>
-          <div class="article-ct clearfix game_description mt-2">
-            <h1>Traffic Jam 3D</h1>
-            <p>Welcome to Traffic Jam 3D, the puzzle game where you must untangle the traffic chaos and restore order to the streets! Get ready to put your problem-solving skills to the test as you navigate through congested roads and find the best solutions to clear the gridlock.</p>
+          <div class="gd-action-right">
+            <button class="gd-btn-icon-only" title="Add to Favorites">
+              <i class="fas fa-gem"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN (SIDEBAR) -->
+      <div class="gd-right-column">
+
+        <!-- SIMILAR GAMES CARD -->
+        <div class="gd-card" style="padding: 20px;">
+          <h2 class="gd-sidebar-heading">Similar Games</h2>
+          <div class="gd-similar-grid">
+
+            <a href="./traffic-tour.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="../images/traffictour.avif" alt="Traffic Tour" class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Traffic Tour</span>
+            </a>
+
+            <a href="./highway-racer-3d.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://ubg77.github.io/edit/highway-racer-3d/logo.png" alt="Highway Racer 3D"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Highway Racer 3D</span>
+            </a>
+
+            <a href="./traffic-mania.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://webglmath.github.io/traffic-mania/logo.png" alt="Traffic Mania"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Traffic Mania</span>
+            </a>
+
+            <a href="./crazy-cars.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://classroomjq.github.io/crazy-cars/logo.png" alt="Crazy Cars"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Crazy Cars</span>
+            </a>
+
+            <a href="./burnin-rubber-5-xs.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://webglmath.github.io/burnin-rubber-5-xs/logo.png" alt="Burnin Rubber 5 XS"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Burnin Rubber 5</span>
+            </a>
+
+            <a href="./drift-boss.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://webglmath.github.io/drift-boss/logo.png" alt="Drift Boss"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Drift Boss</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FULL WIDTH EXPANDED CARDS SECTION -->
+    <div class="gd-full-width-section" style="margin-top: 24px; display: flex; flex-direction: column; gap: 20px;">
+
+      <!-- GAME DESCRIPTION & EXPLANATION CARD -->
+      <div class="gd-card">
+        <h2 class="gd-section-title"><i class="fas fa-info-circle" style="color:var(--gd-primary);"></i> GAME OVERVIEW & EXPLANATION</h2>
+        <div class="gd-text-content">
+          <p>Welcome to Traffic Jam 3D, the puzzle game where you must untangle the traffic chaos and restore order to the streets! Get ready to put your problem-solving skills to the test as you navigate through congested roads and find the best solutions to clear the gridlock.</p>
             <h2>What We Offer</h2>
             <p>Traffic Jam 3D offers a challenging and addictive gameplay experience with hundreds of levels to solve. With simple controls and increasingly complex puzzles, it's the perfect game to challenge your mind and pass the time.</p>
             <h2>Gameplay</h2>
@@ -185,13 +166,38 @@
                 <li>Regular updates with new levels and features</li>
             </ul>
             <p>Get ready to tackle the traffic and become a master of gridlock in Traffic Jam 3D!</p>
-        </div>        
-        </section>
+        </div>
       </div>
-   </div>
-    <button id="button-gotop" class="btn_up">
-      <i class="fal fa-angle-up"></i>
-    </button>   
-  </body>
-  <script src="../js/full.js"></script>
+
+    </div>
+  </main>
+
+  <!-- JAVASCRIPT -->
+  <script src="../js/gamedistribution.js"></script>
+  <!-- FOOTER SECTION WITH DOMAIN NAME -->
+  <footer class="gd-footer">
+    <div class="gd-footer-container">
+      <div class="gd-footer-brand">
+        <a href="../index.html" class="gd-logo">
+          <img src="../images/traffictour.avif" alt="Traffic Tour" class="gd-logo-img">
+          <span class="gd-logo-text-rgb">Traffic Tour</span>
+        </a>
+        <p class="gd-footer-desc">
+          Play the best free online racing, drifting, and driving games directly in your browser with zero downloads.
+        </p>
+      </div>
+
+      <div class="gd-footer-bottom">
+        <div class="gd-domain-badge">
+          <i class="fas fa-globe" style="color:var(--gd-primary);"></i>
+          <span class="gd-domain-name">traffictour.github.io</span>
+        </div>
+        <p class="gd-copyright">&copy; 2026 Traffic Tour. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
