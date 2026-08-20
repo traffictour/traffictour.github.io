@@ -1,649 +1,231 @@
 <!DOCTYPE html>
-<html xmlns="https://www.w3.org/1999/xhtml" lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <title>Traffic Tour</title>
-    <meta name="description" content="Traffic Tour is a driving game where you drive on a highway and speed into traffic.Navigate your way on a straight highway between cars and trucks">
-    <meta name="title" content="Traffic Tour" />
-    <link href="./css/font-awesome.pro.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="./css/jquery.mCustomScrollbar.min.css" />
-    <link type="text/css" rel="stylesheet" href="./js/OwlCarousel/assets/owl.carousel.min.css" />
-    <link type="text/css" rel="stylesheet" href="./js/OwlCarousel/assets/owl.theme.default.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/all.css?v=1.4.3" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3964980751221225"
-     crossorigin="anonymous"></script>
-  </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2V028FSQK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<html lang="en">
 
-  gtag('config', 'G-R2V028FSQK');
-</script>
-  <body>
-    <div class="master">
-      <div class="sidebar">
-        <div class="side-header clearfix">
-          <div class="burger for-mobile">
-            <i class="fal fa-bars"></i>
-          </div>
-          <a class="logo" href="./index.html">
-            <img src="./images/traffictour.avif" alt="logo">
-          </a>
-          <div class="bt-more for-mobile">
-            <i class="far fa-stream"></i>
-          </div>
-        </div>
-        <ul class="side-menu mCustomScrollbar" data-mcs-theme="dark">
-          <li class="category-item">
-            <a href="./game/traffic-tour.html">Traffic Tour</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/traffic-jam-3d.html">Traffic Jam 3d</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/traffic-mania.html">Traffic Mania</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/boat-drift.html">Boat Drift</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/burnin-rubber-5-xs.html">Burnin Rubber 5 Xs</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/burnout-drift-hilltop.html">Burnout Drift Hilltop</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/car-drift-racers-2.html">Car Drift Racers 2</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/car-rush.html">Car Rush</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/crazy-cars.html">Crazy Car</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/cyber-cars-punk-racing.html">Cyber Cars Punk Racing</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/desert-car-racing-1.html">Desert Car Racing 1</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/drift-3.html">Drift 3</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/drift-boss.html">Drift Boss</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/drift-dudes.html">Drift Dudes</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/drift-f1.html">Drift F1</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/drift-hunters.html">Drift Hunters</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/eggy-car.html">Eggy Car</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/endless-truck.html">Endless Truck</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/fly-car-stunt.html">Fly Car Stunt</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/fly-car-stunt-2.html">Fly Car Stun 2</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/fly-car-stunt-3.html">Fly Car Stun 3</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/fly-car-stunt-4.html">Fly Car Stun 4</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/flying-cars-era.html">Flying Cars Era</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/flying-way-duo-race.html">Flying Way Duo Race</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/furious-racing-3d.html">Furious Racing 3d</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/fury-wars.html">Fury Wars</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/go-kart-go-ultra.html">Go Kart Go Ultra</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/highway-racer-3d.html">Highway Racer 3d</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/jelly-truck.html">Jelly Truck</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/kart-race-3d.html">Kart Race 3d</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/raft-wars-2.html">Raft Wars 2</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/sling-drift.html">Sling Drift</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/stock-car-hero.html">Stock Car Hero</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/super-star-car.html">Super Star Car</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/ultra-car.html">Ultra Car</a>
-          </li>
-          <li class="category-item">
-            <a href="./game/up-hill-racing-2.html">Up Hill Racing 2</a>
-          </li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traffic Tour</title>
+  <meta name="description"
+    content="Traffic Tour is a driving game where you drive on a highway and speed into traffic.Navigate your way on a straight highway between cars and trucks.">
+  <link rel="stylesheet" href="./css/font-awesome.pro.css">
+  <link rel="stylesheet" href="./css/gamedistribution.css">
+  <link rel="icon" href="./images/traffictour.avif" type="image/avif">
+</head>
+
+<body>
+
+  <!-- TOP NAVBAR -->
+  <header class="gd-navbar">
+    <div class="gd-nav-container">
+      <div class="gd-nav-left">
+        <a href="./index.html" class="gd-logo">
+          <img src="./images/traffictour.avif" alt="Traffic Tour" class="gd-logo-img">
+          <span class="gd-logo-text-rgb">Traffic Tour</span>
+        </a>
+        <ul class="gd-nav-links">
+          <li><a href="./index.html" class="gd-nav-link">Home</a></li>
+          <li><a href="./catelogy/newgame.html" class="gd-nav-link">New Games</a></li>
+          <li><a href="./catelogy/hotgame.html" class="gd-nav-link">Hot Games</a></li>
+          <li><a href="./catelogy/cargame.html" class="gd-nav-link">Car Games</a></li>
         </ul>
       </div>
-      <div class="g-content">
-        <section class="mid-ct section-game">
-          <div class="container">
-            <div class="columns mobile-column">
-              <div class="column is-12-tablet is-10-desktop">
-                <div class="article game-container clearfix">
-                  <div class="game-iframe-container">
-                    <iframe class="game-iframe" loading="lazy" id="game-area" src="https://traffictour.github.io/traffic-tour/" width="100%" height="600" scrolling="none" frameborder="0" allowfullscreen></iframe>
-                  </div>
-                  <div class="article-header">
-                    <div class="text">
-                      <h1>Traffictour</h1>
-                      <div class="bt-group"></div>
-                    </div>
-                    <div class="bt-group-2">                   
-                      <button onclick="open_fullscreen()">
-                        <i class="fal fa-expand-arrows"></i> Fullscreen </button>
-                    </div>
-                  </div>
-                </div>                
-                <div class="columns" id="more_games">
-                  <div class="column is-12">
-                    <div class="section-title">
-                      <h3>
-                        <span class="g-icon">
-                          <i class="fas fa-heart hot"></i>
-                        </span> You might also like
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="columns is-multiline listing" id="new-games">
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/traffic-mania.html">
-                            <img src="https://webglmath.github.io/traffic-mania/logo.png" class="game-thumb" alt="Traffic Mania">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Traffic Mania</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 5 (10 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/traffic-mania.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="./game/traffic-jam-3d.html">
-                            <img src="https://trafficjam3d.github.io/traffic-jam-3d/logo.png" class="game-thumb" alt="Traffic Jam 3d">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Traffic Jam 3d</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 5 (12 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="./game/traffic-jam-3d.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="./game/furious-racing-3d.html">
-                            <img src="https://trafficjam3d.github.io/furious-racing-3d/logo.png" class="game-thumb" alt="Furious Racing 3d">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Furious Racing 3d</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4.5 (8 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="./game/furious-racing-3d.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="./game/boat-drift.html">
-                            <img src="https://bitlifeonline.github.io/boat-drift/logo.png" class="game-thumb" alt="Boat Drift">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Boat Drift</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4 (1 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="./game/boat-drift.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="./game/burnin-rubber-5-xs.html">
-                            <img src="https://webglmath.github.io/burnin-rubber-5-xs/logo.png" class="game-thumb" alt="Burnin Rubber 5 Xs">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Burnin Rubber 5 Xs</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 5 (13 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="./game/burnin-rubber-5-xs.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/burnout-drift-hilltop.html">
-                            <img src="https://ubg77.github.io/edit/burnout-drift-hilltop/logo.png" class="game-thumb" alt="Burnout Drift Hilltop">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Burnout Drift Hilltop</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 5 (15 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/burnout-drift-hilltop.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/car-drift-racers-2.html">
-                            <img src="https://ubg77.github.io/edit/car-drift-racers-2/logo.png" class="game-thumb" alt="Car Drift Racers 2">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Car Drift Racers 2</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4.5 (1 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/car-drift-racers-2.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/car-rush.html">
-                            <img src="https://webglmath.github.io/car-rush/logo.png" class="game-thumb" alt="Car Rush">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Car Rush</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4 (1 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/car-rush.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/crazy-cars.html">
-                            <img src="https://classroomjq.github.io/crazy-cars/logo.png" class="game-thumb" alt="Crazy Car">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Crazy Car</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4 (5 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/crazy-cars.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/cyber-cars-punk-racing.html">
-                            <img src="https://classroomjq.github.io/cyber-cars-punk-racing/logo.png" class="game-thumb" alt="Cyber Cars Punk Racing">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Cyber Cars Punk Racing</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4 (6 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/cyber-cars-punk-racing.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/desert-car-racing-1.html">
-                            <img src="https://slope-game.github.io/desert-car-racing-1/logo.png" class="game-thumb" alt="Desert Car Racing 1">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Desert Car Racing 1</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4.5 (8 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/desert-car-racing-1.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/drift-3.html">
-                            <img src="https://bitlifeonline.github.io/drift-3/logo.png" class="game-thumb" alt="Drift 3">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Drift 3</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4.5 (9 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/drift-3.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/drift-boss.html">
-                            <img src="https://webglmath.github.io/drift-boss/logo.png" class="game-thumb" alt="Drift Boss">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Drift Boss</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 3 (5 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/drift-boss.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/drift-dudes.html">
-                            <img src="https://ubg77.github.io/drift-dudes/logo.png" class="game-thumb" alt="Drift Dudes">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Drift Dudes</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 3.5 (5 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/drift-dudes.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/drift-f1.html">
-                            <img src="https://bitlifeonline.github.io/drift-f1/logo.png" class="game-thumb" alt="Drift F1">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Drift F1</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 3.5 (7 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/drift-f1.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/drift-hunters.html">
-                            <img src="https://webglmath.github.io/drift-hunters/logo.png" class="game-thumb" alt="Drift Hunters">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Drift Hunters</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 3.5 (6 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/drift-hunters.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/eggy-car.html">
-                            <img src="https://webglmath.github.io/eggy-car/logo.png" class="game-thumb" alt="Eggy Car">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Eggy Car</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4.5 (8 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/eggy-car.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/endless-truck.html">
-                            <img src="https://webglmath.github.io/drift-hunters/logo.png" class="game-thumb" alt="Endless Truck">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Endless Truck</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4.5 (9 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/endless-truck.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/jelly-truck.html">
-                            <img src="https://webglmath.github.io/jelly-truck/logo.png" class="game-thumb" alt="Jelly Truck">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Jelly Truck</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 4.5 (8 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/jelly-truck.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column is-3-desktop is-6-mobile show">
-                    <div class="g-card">
-                      <div class="pic">
-                        <figure class="ratio ratio-75">
-                          <a href="../game/highway-racer-3d.html">
-                            <img src="https://ubg77.github.io/edit/highway-racer-3d/logo.png" class="game-thumb" alt="Highway Racer 3d">
-                          </a>
-                        </figure>
-                      </div>
-                      <div class="g-info">
-                        <h3 class="grid-title ellipsis">Highway Racer 3d</h3>
-                        <div class="rating ellipsis">
-                          <i class="ico fas fa-star"></i> 5 (12 Review )
-                        </div>
-                        <div class="bt-cta">
-                          <a class="cta" href="../game/highway-racer-3d.html">Play Now <i class="fas fa-gamepad-alt"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER -->
+  <main class="gd-main-wrapper">
+    <div class="gd-grid-layout">
+
+      <!-- LEFT COLUMN -->
+      <div class="gd-left-column">
+
+        <!-- HERO GAME STAGE -->
+        <div class="gd-game-stage">
+          <div class="gd-stage-bg-pattern"></div>
+
+          <!-- COVER CARD OVERLAY -->
+          <div class="gd-game-cover-card" id="gd-cover-card">
+            <img src="/images/traffictour.avif" alt="traffictour Logo" class="gd-game-icon-lg">
+            <h1 class="gd-game-title-lg">traffictour</h1>
+            <p class="gd-game-publisher-sub">by GameBerry Studio</p>
+            <button class="gd-btn-play-now" onclick="playGame()">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+          </div>
+
+          <!-- IFRAME CONTAINER -->
+          <div class="gd-iframe-container" id="gd-iframe-container">
+            <iframe id="game-area" src="https://traffictour.github.io/traffic-tour/" title="traffictour Game"
+              allowfullscreen scrolling="no"></iframe>
+          </div>
+
+          <!-- FULLSCREEN BUTTON AT BOTTOM RIGHT -->
+          <button class="gd-btn-stage-fullscreen" onclick="openFullscreen()" title="Fullscreen">
+            <i class="fas fa-expand"></i> Fullscreen
+          </button>
         </div>
-        </section>
-        <section>
-          <div class="article-ct-1 clearfix game_description mt-2">
-            <h2>Traffic Tour</h2>
-            <P>Traffic Tour is a free-to-play mobile racing game developed by Wolves Interactive. The game blends racing and traffic simulation, providing players with a realistic racing experience on urban roads.</P>
-            <p><span>Welcome to Traffic Tour, where the virtual  world road awaits you! If you're a fan,simulations, and thrilling challenges, you've come to the right place. Get ready to embark on a journey into the world of virtual excitement!</span>
-            </p>
-            <h2><span>What We Offer</span>
-            </h2>
-            <p><span>At Traffic Tour, we provide an extensive collection of captivating games that cater to all types. Whether you're a seasoned gamer seeking the ultimate experience or a casual player looking for some fast-paced fun, Traffic Tour offers a wide range of games to satisfy your cravings for high-octane adventures.</span>
-            </p>
-            <h2><span>Diverse Game Selection</span>
-            </h2>
-            <p><span>Traffic Tour boasts an impressive selection of games, each designed to deliver unique and exhilarating gameplay experiences.our diverse range of games ensures there's something for everyone. Here are some of the exciting categories you can explore on our website:</span>
-            </p>
-            <h3><span>Car Games</span>
-            </h3>
-            <p><span>Whether you have a penchant for powerful sports cars, luxurious cars, or classic cars, Traffic Tour offers an array of options to suit your racing preferences. Choose from various game modes, including single-player championships, intense multiplayer races, and time trials to challenge yourself and improve your racing abilities.&nbsp;</span>
-            </p>
-            <h3><span>Racing Games</span>
-            </h3>
-            <p><span>Experience the exhilaration of high-speed racing in our collection of intense racing games. We offer a variety of options to satisfy your racing desires including: Solo challenges against AI opponents or the thrill of multiplayer races. Take on the competition on diverse tracks and circuits, each with its own unique challenges and obstacles. Upgrade your vehicles, unlock new tracks, and customize your ride to create the ultimate racing machine. Challenge yourself in different game modes, from intense championships to thrilling time trials, as you strive for victory and aim to reach the top of the leaderboards.&nbsp;</span>
-            </p>
-            <h3><span>Drifting Games</span>
-            </h3>
-            <p><span>With a wide range of drifting games that we offer to choose from, including realistic simulations and arcade-style experiences, you'll have plenty of opportunities to hone your drifting techniques and prove yourself as the ultimate drift king. Get ready to burn rubber as you showcase your style and earn points by executing jaw-dropping drifts around tight corners and challenging courses. Show off your ability to maintain perfect control while sliding sideways, leaving behind a trail of smoke and tire marks.</span>
-            </p>
-            <h3><span>Parking Games</span>
-            </h3>
-            <p><span>You'll face a variety of parking scenarios that will put your skills to the test. From tight spaces and crowded parking lots to parallel parking challenges. Each level presents a new and exciting parking challenge, pushing you to make perfect turns, control your speed, and showcase your expert handling.</span>
-            </p>
-            <h3><span>Monster Truck Games</span>
-            </h3>
-            <p><span>Who doesn't love the sheer excitement of monster trucks with their massive tires, screeching tires, and powerful engines? Our collection of thrilling monster truck games allows you to immerse yourself in the world of these incredible vehicles. Experience the thrill of crushing cars, performing jaw-dropping stunts, and engaging in exhilarating races against other monster trucks. At Traffic Tour, we offer a wide variety of truck and monster truck games that guarantee hours of non-stop fun and entertainment. From big trucks to pickup trucks, winter trucks to zombie trucks, extreme trucks to off-road trucks, the options are endless.&nbsp;</span>
+
+        <!-- ACTION BAR -->
+        <div class="gd-card gd-action-bar">
+          <div class="gd-action-left">
+            <button class="gd-btn-outline" onclick="openInNewTab()">
+              <i class="fas fa-external-link-alt"></i> Open in a new tab
+            </button>
+          </div>
+          <div class="gd-action-right">
+            <button class="gd-btn-icon-only" title="Add to Favorites">
+              <i class="fas fa-gem"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN (SIDEBAR) -->
+      <div class="gd-right-column">
+
+        <!-- SIMILAR GAMES CARD -->
+        <div class="gd-card" style="padding: 20px;">
+          <h2 class="gd-sidebar-heading">Similar Games</h2>
+          <div class="gd-similar-grid">
+
+            <a href="./game/boat-drift.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="/images/boat-drift.jpeg" alt="boat drift" class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Boat Drift</span>
+            </a>
+
+            <a href="./game/highway-racer-3d.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://ubg77.github.io/edit/highway-racer-3d/logo.png" alt="Mountain Bus Driver"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Mountain Bus Driver</span>
+              <span class="gd-similar-pub">Instant Games Studio</span>
+            </a>
+
+            <a href="./game/traffic-mania.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://webglmath.github.io/traffic-mania/logo.png" alt="Bus Escape: Clear Jam"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Bus Escape: Clear Jam</span>
+              <span class="gd-similar-pub">Mirra Games</span>
+            </a>
+
+            <a href="./game/crazy-cars.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://classroomjq.github.io/crazy-cars/logo.png" alt="Animal Bus Traffic Jam"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Animal Bus Traffic Jam</span>
+              <span class="gd-similar-pub">PuzzleGame.Com</span>
+            </a>
+
+            <a href="./game/burnin-rubber-5-xs.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://webglmath.github.io/burnin-rubber-5-xs/logo.png" alt="Emergency Jam"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Emergency Jam</span>
+              <span class="gd-similar-pub">Inlogic Software</span>
+            </a>
+
+            <a href="./game/drift-boss.html" class="gd-similar-card">
+              <div class="gd-similar-thumb-wrap">
+                <img src="https://webglmath.github.io/drift-boss/logo.png" alt="Bus Jam Escape"
+                  class="gd-similar-thumb">
+              </div>
+              <span class="gd-similar-title">Bus Jam Escape</span>
+              <span class="gd-similar-pub">GameBerry Studio</span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FULL WIDTH EXPANDED CARDS SECTION -->
+    <div class="gd-full-width-section" style="margin-top: 24px; display: flex; flex-direction: column; gap: 20px;">
+
+      <!-- GAME INFO & METADATA GRID -->
+      <div class="gd-card">
+        <div class="gd-info-grid">
+          <div class="gd-info-row">
+            <span class="gd-info-label">Game Title:</span>
+            <span class="gd-info-value" style="font-weight:600; color:#1f2937;">Park Fever</span>
+          </div>
+          <div class="gd-info-row">
+            <span class="gd-info-label">Mobile Web Compatible:</span>
+            <span class="gd-info-value">iOS - Android</span>
+          </div>
+          <div class="gd-info-row">
+            <span class="gd-info-label">Published by:</span>
+            <a href="#" class="gd-info-link">GameBerry Studio</a>
+          </div>
+          <div class="gd-info-row" style="grid-column: 1 / -1; margin-top: 6px;">
+            <span class="gd-info-label" style="min-width:70px;">Language:</span>
+            <span class="gd-tag-pill">English</span>
+          </div>
+          <div class="gd-info-row" style="grid-column: 1 / -1; margin-top: 4px;">
+            <span class="gd-info-label" style="min-width:70px;">Gender:</span>
+            <span class="gd-tag-pill">Male</span>
+            <span class="gd-tag-pill">Female</span>
+            <span class="gd-info-label" style="margin-left: 24px; min-width:80px;">Age Group:</span>
+            <span class="gd-tag-pill gd-tag-purple">Teens</span>
+            <span class="gd-tag-pill gd-tag-purple">YoungAdults</span>
+            <span class="gd-tag-pill gd-tag-purple">Adults</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DESCRIPTION -->
+      <div class="gd-card">
+        <h2 class="gd-section-title">DESCRIPTION</h2>
+        <p class="gd-text-content">
+          Can you clear the traffic jam? Move vehicles in the right order, free the buses, and pick up waiting
+          passengers. Match colors, plan every move, and enjoy a fun puzzle that combines parking strategy with
+          passenger management!
+        </p>
+      </div>
+
+      <!-- INSTRUCTIONS -->
+      <div class="gd-card">
+        <h2 class="gd-section-title">INSTRUCTIONS</h2>
+        <p class="gd-text-content">
+          Tap a vehicle to drive it out of the traffic jam. Vehicles can only leave if the path in the direction of
+          their arrow is completely clear. Move them to the boarding area and pick up passengers in the queue. Match
+          each vehicle with the correct passengers color and clear the entire parking lot to complete the level.
+        </p>
+      </div>
+
+      <!-- IMPORTANT NOTIFICATION BOX -->
+      <div class="gd-card">
+        <div class="gd-notification-box">
+          <div>
+            <h2 class="gd-notification-title">IMPORTANT NOTIFICATION ABOUT EMBEDDING GAMES</h2>
+            <p class="gd-text-content" style="font-size: 13px;">
+              Ads should be requested from the game's page url to avoid loss of ads performance. To make this happen
+              please adjust your game frame request url as follows: <strong>gd_sdk_referrer_url</strong> should be
+              added to the request url. To do that modify your request url as:<br>
             </p>
           </div>
-        </section>
+          <div class="gd-notification-controls">
+            <span class="gd-notification-arrow"><i class="fas fa-chevron-up"></i></span>
+            <span class="gd-notification-arrow"><i class="fas fa-chevron-down"></i></span>
+          </div>
+        </div>
       </div>
+
     </div>
-    <a class="scroll" href="#top" id="back-to-top" title="Back to top">↑</a>
-  </body>
-  <script src="../js/full.js"></script>
+  </main>
+
+  <!-- JAVASCRIPT -->
+  <script src="./js/gamedistribution.js"></script>
+
+</body>
+
 </html>
