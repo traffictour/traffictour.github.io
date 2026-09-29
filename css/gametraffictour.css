@@ -256,37 +256,70 @@ a {
 .gd-nav-links {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 8px;
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gd-nav-links::-webkit-scrollbar {
+  display: none;
 }
 
 .gd-nav-link {
   font-family: var(--font-heading), 'Outfit', sans-serif;
-  font-size: 16.5px;
+  font-size: 14.5px;
   font-weight: 700;
   color: #374151;
   text-decoration: none;
-  transition: all 0.25s ease;
-  display: flex;
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 18px;
+  gap: 7px;
+  padding: 6px 14px;
   border-radius: 9999px;
+  white-space: nowrap;
   letter-spacing: -0.01em;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.gd-nav-link i {
+  font-size: 14px;
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .gd-nav-link:hover {
   color: var(--gd-primary, #5c24e5);
-  background: rgba(92, 36, 229, 0.06);
-  transform: translateY(-1px);
+  background: rgba(92, 36, 229, 0.08);
+  border-color: rgba(92, 36, 229, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(92, 36, 229, 0.12);
+}
+
+.gd-nav-link:hover i {
+  transform: scale(1.22) rotate(-5deg);
 }
 
 .gd-nav-link.active {
   color: var(--gd-primary, #5c24e5);
-  background: rgba(92, 36, 229, 0.1);
+  background: rgba(92, 36, 229, 0.12);
+  border-color: rgba(92, 36, 229, 0.25);
   font-weight: 800;
+  box-shadow: 0 2px 8px rgba(92, 36, 229, 0.15);
 }
+
+/* Category specific icon glow & colors */
+.gd-nav-icon-new { color: #10b981; filter: drop-shadow(0 1px 3px rgba(16, 185, 129, 0.35)); }
+.gd-nav-icon-hot { color: #ef4444; filter: drop-shadow(0 1px 3px rgba(239, 68, 68, 0.35)); }
+.gd-nav-icon-car { color: #3b82f6; filter: drop-shadow(0 1px 3px rgba(59, 130, 246, 0.35)); }
+.gd-nav-icon-action { color: #f59e0b; filter: drop-shadow(0 1px 3px rgba(245, 158, 11, 0.35)); }
+.gd-nav-icon-shooting { color: #ec4899; filter: drop-shadow(0 1px 3px rgba(236, 72, 153, 0.35)); }
+.gd-nav-icon-puzzle { color: #8b5cf6; filter: drop-shadow(0 1px 3px rgba(139, 92, 246, 0.35)); }
+.gd-nav-icon-sports { color: #14b8a6; filter: drop-shadow(0 1px 3px rgba(20, 184, 166, 0.35)); }
 
 .gd-nav-right {
   display: flex;
@@ -326,10 +359,109 @@ a {
   cursor: pointer;
 }
 
+/* TOP LEADERBOARD AD BANNER (728x90) */
+.gd-ad-leaderboard-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 16px 2px;
+  box-sizing: border-box;
+}
+
+.gd-ad-leaderboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  max-width: 100%;
+}
+
+.gd-ad-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  line-height: 1;
+  user-select: none;
+}
+
+.gd-ad-slot-728x90 {
+  width: 728px;
+  height: 90px;
+  max-width: 100%;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gd-ad-slot-728x90:hover {
+  border-color: #94a3b8;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.gd-ad-placeholder-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+.gd-ad-placeholder-text i {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.gd-ad-slot-728x90 ins.adsbygoogle {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  width: 728px;
+  height: 90px;
+}
+
+@media (max-width: 768px) {
+  .gd-ad-leaderboard-wrapper {
+    padding: 12px 12px 0;
+  }
+  .gd-ad-slot-728x90 {
+    width: 100%;
+    max-width: 728px;
+    height: auto;
+    min-height: 60px;
+    border-radius: 8px;
+  }
+  .gd-ad-slot-728x90 ins.adsbygoogle {
+    max-width: 100%;
+  }
+  .gd-ad-placeholder-text {
+    font-size: 11px;
+    gap: 6px;
+  }
+}
+
 /* MAIN LAYOUT */
 .gd-main-wrapper {
   max-width: 1280px;
-  margin: 24px auto 48px;
+  margin: 18px auto 48px;
   padding: 0 24px;
 }
 
@@ -449,6 +581,42 @@ a {
   border: none;
 }
 
+/* FLOATING FULLSCREEN BUTTON (BOTTOM-RIGHT CORNER OF GAME STAGE) */
+.gd-btn-floating-fullscreen {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 20;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  outline: none;
+}
+
+.gd-btn-floating-fullscreen:hover {
+  transform: scale(1.12) translateY(-2px);
+  background: linear-gradient(135deg, var(--gd-primary, #5c24e5) 0%, #7c3aed 100%);
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 28px rgba(92, 36, 229, 0.6), 0 0 16px rgba(168, 85, 247, 0.5);
+  color: #ffffff;
+}
+
+.gd-btn-floating-fullscreen:active {
+  transform: scale(0.96) translateY(0);
+}
+
 /* CARDS COMMON */
 .gd-card {
   background: var(--gd-card-bg);
@@ -456,90 +624,6 @@ a {
   padding: 20px 24px;
   box-shadow: var(--gd-shadow);
   border: 1px solid #f0f2f5;
-}
-
-/* ACTION BAR CARD */
-.gd-action-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 24px;
-  background: #ffffff;
-  border-radius: var(--gd-radius-md, 14px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-  border: 1px solid #f0f2f5;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.gd-action-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.gd-btn-outline {
-  border: 1.5px solid var(--gd-primary, #5c24e5);
-  color: var(--gd-primary, #5c24e5);
-  background: transparent;
-  padding: 9px 20px;
-  border-radius: var(--gd-radius-pill, 9999px);
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 13px;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  user-select: none;
-}
-
-.gd-btn-outline:hover {
-  background: var(--gd-primary, #5c24e5);
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(92, 36, 229, 0.3);
-}
-
-.gd-btn-outline:active {
-  transform: translateY(0) scale(0.98);
-}
-
-/* SPECIAL FULLSCREEN ACTION BUTTON */
-.gd-btn-fullscreen {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  border: 1.5px solid transparent;
-  color: #ffffff;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
-}
-
-.gd-btn-fullscreen:hover {
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
-  color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.45);
-}
-
-.gd-btn-icon-only {
-  background: #f4f4f9;
-  border: none;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gd-primary);
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.gd-btn-icon-only:hover {
-  background: var(--gd-primary-light);
-  transform: scale(1.1);
 }
 
 /* GAME INFO / METADATA TABLE CARD */
@@ -760,6 +844,234 @@ a {
   overflow: hidden;
 }
 
+/* ==========================================================================
+   U-SHAPED SURROUNDING GAME LAYOUT (GAME STAGE IN CENTER OF U)
+   ========================================================================== */
+.gd-u-game-layout {
+  display: grid;
+  grid-template-columns: 145px 1fr 145px;
+  grid-template-areas:
+    "u-left   u-center   u-right"
+    "u-bottom u-bottom   u-bottom";
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+/* WINGS FLANKING THE GAME STAGE (LEFT & RIGHT OF U) */
+.gd-u-wing-left,
+.gd-u-wing-right {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 14px;
+  height: 100%;
+}
+
+.gd-u-wing-left {
+  grid-area: u-left;
+}
+
+.gd-u-wing-right {
+  grid-area: u-right;
+}
+
+.gd-u-center-stage {
+  grid-area: u-center;
+  min-width: 0;
+}
+
+.gd-u-center-stage .gd-game-stage {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+}
+
+/* BOTTOM SHELF (BASE OF U) */
+.gd-u-bottom-shelf {
+  grid-area: u-bottom;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+/* MODERN FULL-BLEED GAME TILES (POKI / CRAZYGAMES TILE STYLE) */
+.gd-u-game-layout .gd-similar-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  background: #0f172a;
+  border-radius: var(--gd-radius-md, 14px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease,
+              border-color 0.3s ease;
+  min-height: 0;
+}
+
+.gd-u-game-layout .gd-similar-card:hover {
+  transform: translateY(-4px) scale(1.025);
+  border-color: rgba(92, 36, 229, 0.5);
+  box-shadow: 0 12px 24px rgba(92, 36, 229, 0.22);
+  z-index: 2;
+}
+
+/* THUMBNAIL WRAPPER IN U-CARD */
+.gd-u-game-layout .gd-similar-thumb-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+}
+
+.gd-u-game-layout .gd-similar-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
+}
+
+.gd-u-game-layout .gd-similar-card:hover .gd-similar-thumb {
+  transform: scale(1.1);
+  filter: brightness(0.85);
+}
+
+/* CENTER HOVER PLAY ICON FOR U-CARDS */
+.gd-u-game-layout .gd-similar-thumb-wrap::after {
+  content: '\f04b';
+  font-family: 'Font Awesome 5 Pro', 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--gd-primary, #5c24e5);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding-left: 2px;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 6px 18px rgba(92, 36, 229, 0.5), 0 0 0 2px rgba(255, 255, 255, 0.85);
+  z-index: 3;
+}
+
+.gd-u-game-layout .gd-similar-card:hover .gd-similar-thumb-wrap::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* TITLE OVERLAY AT BOTTOM OF U-CARD */
+.gd-u-game-layout .gd-similar-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  padding: 16px 10px 8px;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.65) 65%, transparent 100%);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 11.5px;
+  color: #ffffff;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  transition: color 0.25s ease;
+  pointer-events: none;
+}
+
+.gd-u-game-layout .gd-similar-card:hover .gd-similar-title {
+  color: #38bdf8;
+}
+
+/* BOTTOM SHELF SPECIFIC CARD HEIGHT */
+.gd-u-bottom-shelf .gd-similar-card {
+  height: 130px;
+}
+
+/* RESPONSIVE MEDIA QUERIES FOR U-SHAPED LAYOUT */
+@media (max-width: 1100px) {
+  .gd-u-game-layout {
+    grid-template-columns: 125px 1fr 125px;
+    gap: 12px;
+  }
+  .gd-u-bottom-shelf {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+  .gd-u-bottom-shelf .gd-similar-card {
+    height: 115px;
+  }
+}
+
+@media (max-width: 860px) {
+  .gd-u-game-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .gd-u-center-stage {
+    order: 1;
+    width: 100%;
+  }
+  .gd-u-wing-left {
+    order: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    gap: 12px;
+    height: auto;
+  }
+  .gd-u-wing-left .gd-similar-card,
+  .gd-u-wing-right .gd-similar-card {
+    height: 120px;
+  }
+  .gd-u-wing-right {
+    order: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    gap: 12px;
+    height: auto;
+  }
+  .gd-u-bottom-shelf {
+    order: 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .gd-u-bottom-shelf .gd-similar-card {
+    height: 120px;
+  }
+}
+
+@media (max-width: 520px) {
+  .gd-u-wing-left,
+  .gd-u-wing-right,
+  .gd-u-bottom-shelf {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .gd-u-wing-left .gd-similar-card,
+  .gd-u-wing-right .gd-similar-card,
+  .gd-u-bottom-shelf .gd-similar-card {
+    height: 105px;
+  }
+}
+
 /* SPECIFICATIONS LIST */
 .gd-spec-list {
   display: flex;
@@ -959,41 +1271,48 @@ a {
   gap: 10px;
 }
 
-/* CATALOG GAME CARDS GRID (SẮP XẾP GỌN GÀNG) */
+/* CATALOG GAME CARDS GRID (200x200PX SQUARE GRID - POKI / CRAZYGAMES STYLE) */
 .gd-catalog-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: center;
+  justify-items: center;
+  gap: 24px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-/* INDIVIDUAL CATALOG GAME CARD (KHUNG GAME CON) */
+/* INDIVIDUAL CATALOG GAME CARD (200x200PX) */
 .gd-catalog-card {
-  background: #ffffff;
-  border-radius: var(--gd-radius-md, 14px);
-  border: 1px solid #e5e7eb;
+  width: 200px;
+  height: 200px;
+  background: #0f172a;
+  border-radius: var(--gd-radius-md, 16px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   position: relative;
+  display: block;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.35s ease,
+              border-color 0.35s ease;
 }
 
 .gd-catalog-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(92, 36, 229, 0.35);
-  box-shadow: 0 14px 30px rgba(92, 36, 229, 0.18);
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(92, 36, 229, 0.5);
+  box-shadow: 0 16px 32px rgba(92, 36, 229, 0.25);
 }
 
-/* GAME IMAGE THUMBNAIL FRAME (KHUNG HÌNH ẢNH GAME) */
+/* GAME IMAGE THUMBNAIL FRAME (FULL-BLEED 200x200PX) */
 .gd-catalog-thumb-wrap {
-  position: relative;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   overflow: hidden;
   background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
-  border-bottom: 1px solid #f1f5f9;
 }
 
 /* Inner Ring Highlight inside Thumbnail Frame */
@@ -1001,33 +1320,33 @@ a {
   content: '';
   position: absolute;
   inset: 0;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
   z-index: 2;
   pointer-events: none;
 }
 
-/* Shiny Hover Overlay Play Icon */
+/* Shiny Center Hover Overlay Play Icon */
 .gd-catalog-thumb-wrap::after {
   content: '\f04b';
   font-family: 'Font Awesome 5 Pro', 'Font Awesome 5 Free', sans-serif;
   font-weight: 900;
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.5);
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  background: rgba(92, 36, 229, 0.92);
+  background: var(--gd-primary, #5c24e5);
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 3px;
   opacity: 0;
   transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 0 6px 20px rgba(92, 36, 229, 0.5), 0 0 0 3px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 24px rgba(92, 36, 229, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.85);
   z-index: 3;
 }
 
@@ -1046,8 +1365,8 @@ a {
 }
 
 .gd-catalog-card:hover .gd-catalog-thumb {
-  transform: scale(1.08);
-  filter: brightness(1.05);
+  transform: scale(1.1);
+  filter: brightness(0.8);
 }
 
 /* BADGES ON THUMBNAIL FRAME */
@@ -1055,16 +1374,17 @@ a {
   position: absolute;
   top: 10px;
   left: 10px;
-  z-index: 4;
+  z-index: 5;
   font-family: var(--font-heading);
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.6px;
-  padding: 4px 10px;
+  padding: 3px 8px;
   border-radius: 9999px;
   color: #ffffff;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .gd-badge-new {
@@ -1082,65 +1402,77 @@ a {
   box-shadow: 0 3px 10px rgba(59, 130, 246, 0.4);
 }
 
-/* CARD CONTENT & DETAILS */
+/* CARD CONTENT & DETAILS OVERLAY (MODERN BLURRED HOVER OVERLAY) */
 .gd-catalog-content {
-  padding: 14px 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  padding: 12px 14px;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.72) 65%, transparent 100%);
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-between;
-  gap: 8px;
-  background: #ffffff;
+  justify-content: flex-end;
+  gap: 4px;
+  transition: background 0.3s ease;
+  pointer-events: none;
 }
 
 .gd-catalog-title {
   font-family: var(--font-heading);
-  font-size: 15px;
-  font-weight: 800;
-  color: #1f2937;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.3;
-  transition: color 0.2s ease;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  transition: color 0.25s ease;
 }
 
 .gd-catalog-card:hover .gd-catalog-title {
-  color: var(--gd-primary, #5c24e5);
+  color: #38bdf8;
 }
 
 .gd-catalog-sub {
-  font-size: 12px;
-  color: #6b7280;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* PLAY BUTTON IN CARD */
+/* PLAY BUTTON IN CARD (SLIDES UP ON HOVER) */
 .gd-catalog-play-btn {
-  margin-top: 4px;
-  padding: 8px 14px;
-  background: #f3f4f6;
-  color: var(--gd-primary, #5c24e5);
+  padding: 5px 10px;
+  background: var(--gd-primary, #5c24e5);
+  color: #ffffff;
   font-family: var(--font-heading);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  border-radius: 8px;
+  border-radius: 6px;
   text-align: center;
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(8px);
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(92, 36, 229, 0.4);
 }
 
 .gd-catalog-card:hover .gd-catalog-play-btn {
-  background: var(--gd-primary, #5c24e5);
-  color: #ffffff;
-  box-shadow: 0 4px 14px rgba(92, 36, 229, 0.35);
+  opacity: 1;
+  max-height: 32px;
+  transform: translateY(0);
+  margin-top: 4px;
 }
 
 /* BOTTOM COLLECTIONS SECTION */
@@ -1325,13 +1657,6 @@ a {
 }
 
 /* RESPONSIVE MEDIA QUERIES */
-@media (max-width: 1100px) {
-  .gd-catalog-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-  }
-}
-
 @media (max-width: 1024px) {
   .gd-grid-layout {
     grid-template-columns: 1fr;
@@ -1342,10 +1667,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  .gd-catalog-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-  }
   .gd-category-hero {
     padding: 20px;
   }
@@ -1382,18 +1703,39 @@ a {
   .gd-collections-grid {
     grid-template-columns: 1fr;
   }
+  .gd-btn-floating-fullscreen {
+    bottom: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
 }
 
 @media (max-width: 480px) {
   .gd-catalog-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 12px;
+    justify-content: center;
+    justify-items: center;
+  }
+  .gd-catalog-card {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1 / 1;
   }
   .gd-catalog-content {
-    padding: 10px 12px;
+    padding: 8px 10px;
   }
   .gd-catalog-title {
-    font-size: 13.5px;
+    font-size: 12px;
+  }
+  .gd-catalog-thumb-wrap::after {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
   }
 }
 

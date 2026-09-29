@@ -17,6 +17,10 @@ function playGame() {
 }
 
 function openFullscreen() {
+  const coverCard = document.getElementById('gd-cover-card');
+  if (coverCard && coverCard.style.display !== 'none') {
+    playGame();
+  }
   const iframe = document.getElementById('game-area');
   if (!iframe) return;
 
